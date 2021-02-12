@@ -9,47 +9,54 @@ img {
   width: 50px;
 }
 
+nav {
+  width: 100%;
+}
+
 
 header{
   background-color: rgb(63, 201, 223);
   display:flex;
   flex-direction: column;
   align-items: flex-start;
-  justify-content: space-around;
+  justify-content: center;
   width: 100%;
   height: 150px;
   color: rgb(11, 81, 102);
 
   .first-nav{
     display: flex;
-    align-items: flex-end;
-    justify-content: space-evenly;
+    align-items: center;
+    justify-content: space-around;
     height: 50px;
     width: 100%;
   }
    .second-nav{
     display: flex;
-    align-items: flex-end;
-    justify-content: space-evenly;
-    margin: 10px;
-    padding: 10px;
+    align-items: center;
+    justify-content: space-around;
     height: 50px;
     width: 100%;
 
     
     ul{
       list-style: none;
-      
+      width: 100%;
+      display: flex;
+      align-items: center;
+      justify-content: space-around;
+
       li{
       display:inline;
         margin-left: 50px auto;
         margin-right: 50px auto;
-        padding: 60px;
+  
 
         .menu{
           height: 30px;
           width: 30px;
           opacity: 80%;
+          margin-left: 50px auto;
 
     
         }
@@ -61,6 +68,7 @@ header{
 }
 }
 main{
+  margin-top: 100px auto;
   height: 800px;
   width: 100%;
   background-image: url("./Component\ 1.png");
@@ -79,6 +87,15 @@ main{
     align-content: center;
    }
 
+   .form{
+     display: grid;
+     grid-template-columns: 1fr 1fr;
+     height: 200px;
+     width: 80%;
+     margin:auto;
+     padding:30px;
+   }
+
     p{
  
       width: 650px;
@@ -92,7 +109,7 @@ main{
       font-weight: bold;
       font-size: 24px;
       line-height: 29px;
-      word-break: break-all;
+      word-wrap: break-word;
       color: #2A535C;
     }
   
@@ -106,53 +123,53 @@ main{
   padding:80px auto;
  }
  .activities:hover{
-  height:400px;
-  width: 700px;
-  border-radius: 5px solid black;
+  transform: scale(1.5);
 }
 
   .container{
     height: 600px;
-    width: 100%;
+    width: 1200px;
     box-sizing: border-box;
     display: grid;
     color: #2A535C;
     font-family: Sansita;
     font-style: normal;
     font-weight: bold;
+    margin:auto;
 
     .first-pic {
       grid-area: first;
       opacity: 1;
+      color: white;
+      text-shadow: 2px 2px 4px #082b2e;
     }
     .first-pic:hover{
-      height:80px;
-      width: 80px;
-      border-radius: 5px solid black;
+      transform: scale(1.5);
+      
     }
     .second-pic {
       grid-area: second;
+      color: white;
+      text-shadow: 2px 2px 4px #082b2e;
     }
     .second-pic:hover{
-      height:80px;
-      width: 80px;
-      box-shadow: 5px gray;
+      transform: scale(1.5);
     }
     .third-pic {
       grid-area: third;
+      color: white;
+      text-shadow: 2px 2px 4px #082b2e;
     }
     .third-pic:hover{
-      height:80px;
-      width: 80px;
-      box-shadow: 5px gray;
+      transform: scale(1.5);
     }
     .fourth-pic {
       grid-area: fourth;
+      color: white;
+      text-shadow: 2px 2px 4px #082b2e;
     }
     .fourth-pic:hover{
-      height:80px;
-      width: 80px;
-      box-shadow: 5px gray;
+      transform: scale(1.2);
     }
     grid-template-areas: 
     ". . . first"
@@ -167,22 +184,36 @@ main{
  
 header{
   width: 370px;
-  height: 300px;
+  height: 200px;
   background-color:white;
   font-size: 12px;
+  text-align: left;
 
+    h2{
+      text-align: center;
+    }
 
+   .first-nav{
+    justify-content: flex-start;
+    align-items: center;
+   
+   }
    .second-nav{
     flex-direction: column;
     align-items: center;
     justify-content: flex-start;
     padding: 0;
     margin-top: 0%;
+
    
   
-    
+
     ul{
       list-style: none;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: space-around;
       .menu{
         display: none;
       }
@@ -191,7 +222,9 @@ header{
        display:block;
         margin:auto;
         padding: 10px;
-        
+        height: 25px;
+        width:100px;
+        box-shadow: 10px 10px 5px rgb(3, 46, 46);
       }
     }
 
@@ -199,6 +232,7 @@ header{
 }
 }
 main{
+  
 
   h3{
     width: 100%;
@@ -214,7 +248,7 @@ main{
     p{
  
       width: 300px;
-      height: 100px;
+      height: 90px;
       right: 100px;
       top: 100px;
       font-size: 15px;
@@ -226,16 +260,13 @@ main{
       height: 100px;
       width: 200px;
      background-image: url("./Copy-of-Untitled-3.png");
+     box-shadow: 10px 10px 5px grey;
      background-size: cover;
      border-radius: 30px;
      margin:20px auto;
      padding:80px auto;
     }
-    .activities:hover{
-     height:300px;
-     width: 300px;
-     border-radius: 5px solid black;
-   }
+  
     .container{
       height: 300px;
       width: 350px;
@@ -252,35 +283,19 @@ main{
         grid-area: first;
         opacity: 1;
       }
-      .first-pic:hover{
-        height:80px;
-        width: 80px;
-        border-radius: 5px solid black;
-      }
+     
       .second-pic {
         grid-area: second;
       }
-      .second-pic:hover{
-        height:80px;
-        width: 80px;
-        box-shadow: 5px gray;
-      }
+     
       .third-pic {
         grid-area: third;
       }
-      .third-pic:hover{
-        height:80px;
-        width: 80px;
-        box-shadow: 5px gray;
-      }
+     
       .fourth-pic {
         grid-area: fourth;
       }
-      .fourth-pic:hover{
-        height:80px;
-        width: 80px;
-        box-shadow: 5px gray;
-      }
+     
       grid-template-areas: 
       ". . . first"
       ". . second ."

@@ -1,0 +1,250 @@
+* {
+  margin: 0;
+  padding: 0%;
+  box-sizing: border-box;
+}
+
+img {
+  height: 50px;
+  width: 50px;
+}
+
+header {
+  background-color: #3fc9df;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: space-around;
+  width: 100%;
+  height: 150px;
+  color: #0b5166;
+}
+header .first-nav {
+  display: flex;
+  align-items: flex-end;
+  justify-content: space-evenly;
+  height: 50px;
+  width: 100%;
+}
+header .second-nav {
+  display: flex;
+  align-items: flex-end;
+  justify-content: space-evenly;
+  margin: 10px;
+  padding: 10px;
+  height: 50px;
+  width: 100%;
+}
+header .second-nav ul {
+  list-style: none;
+}
+header .second-nav ul li {
+  display: inline;
+  margin-left: 50px auto;
+  margin-right: 50px auto;
+  padding: 60px;
+}
+header .second-nav ul li .menu {
+  height: 30px;
+  width: 30px;
+  opacity: 80%;
+}
+
+main {
+  height: 800px;
+  width: 100%;
+  background-image: url("./Component 1.png");
+  background-size: cover;
+  opacity: 80%;
+  color: #0b5166;
+}
+main h3 {
+  width: 100%;
+  padding: 50px;
+  font-family: Sansita;
+  font-style: normal;
+  font-weight: bold;
+  color: #2A535C;
+  font-size: 32px;
+  align-content: center;
+}
+main p {
+  width: 650px;
+  height: 100px;
+  right: 213px;
+  top: 271px;
+  margin: auto;
+  padding: 50px;
+  font-family: Sansita;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 24px;
+  line-height: 29px;
+  word-break: break-all;
+  color: #2A535C;
+}
+main .activities {
+  height: 300px;
+  width: 600px;
+  background-image: url("./Copy-of-Untitled-3.png");
+  background-size: cover;
+  border-radius: 30px;
+  margin: 20px auto;
+  padding: 80px auto;
+}
+main .activities:hover {
+  height: 400px;
+  width: 700px;
+  border-radius: 5px solid black;
+}
+main .container {
+  height: 600px;
+  width: 100%;
+  box-sizing: border-box;
+  display: grid;
+  color: #2A535C;
+  font-family: Sansita;
+  font-style: normal;
+  font-weight: bold;
+  grid-template-areas: ". . . first" ". . second ." ". third . ." "fourth . . .";
+}
+main .container .first-pic {
+  grid-area: first;
+  opacity: 1;
+}
+main .container .first-pic:hover {
+  height: 80px;
+  width: 80px;
+  border-radius: 5px solid black;
+}
+main .container .second-pic {
+  grid-area: second;
+}
+main .container .second-pic:hover {
+  height: 80px;
+  width: 80px;
+  box-shadow: 5px gray;
+}
+main .container .third-pic {
+  grid-area: third;
+}
+main .container .third-pic:hover {
+  height: 80px;
+  width: 80px;
+  box-shadow: 5px gray;
+}
+main .container .fourth-pic {
+  grid-area: fourth;
+}
+main .container .fourth-pic:hover {
+  height: 80px;
+  width: 80px;
+  box-shadow: 5px gray;
+}
+
+@media screen and (max-width: 700px) {
+  header {
+    width: 370px;
+    height: 300px;
+    background-color: white;
+    font-size: 12px;
+  }
+  header .second-nav {
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    padding: 0;
+    margin-top: 0%;
+  }
+  header .second-nav ul {
+    list-style: none;
+  }
+  header .second-nav ul .menu {
+    display: none;
+  }
+  header .second-nav ul li {
+    display: block;
+    margin: auto;
+    padding: 10px;
+  }
+
+  main h3 {
+    width: 100%;
+    padding: 50px;
+    font-family: Sansita;
+    font-style: normal;
+    font-weight: bold;
+    color: #2A535C;
+    font-size: 20px;
+    align-content: center;
+  }
+  main p {
+    width: 300px;
+    height: 100px;
+    right: 100px;
+    top: 100px;
+    font-size: 15px;
+    margin: auto;
+    padding: 5px;
+  }
+  main .activities {
+    height: 100px;
+    width: 200px;
+    background-image: url("./Copy-of-Untitled-3.png");
+    background-size: cover;
+    border-radius: 30px;
+    margin: 20px auto;
+    padding: 80px auto;
+  }
+  main .activities:hover {
+    height: 300px;
+    width: 300px;
+    border-radius: 5px solid black;
+  }
+  main .container {
+    height: 300px;
+    width: 350px;
+    box-sizing: border-box;
+    display: grid;
+    color: #2A535C;
+    font-family: Sansita;
+    font-style: normal;
+    font-weight: bold;
+    margin: auto;
+    padding: 10px;
+    grid-template-areas: ". . . first" ". . second ." ". third . ." "fourth . . .";
+  }
+  main .container .first-pic {
+    grid-area: first;
+    opacity: 1;
+  }
+  main .container .first-pic:hover {
+    height: 80px;
+    width: 80px;
+    border-radius: 5px solid black;
+  }
+  main .container .second-pic {
+    grid-area: second;
+  }
+  main .container .second-pic:hover {
+    height: 80px;
+    width: 80px;
+    box-shadow: 5px gray;
+  }
+  main .container .third-pic {
+    grid-area: third;
+  }
+  main .container .third-pic:hover {
+    height: 80px;
+    width: 80px;
+    box-shadow: 5px gray;
+  }
+  main .container .fourth-pic {
+    grid-area: fourth;
+  }
+  main .container .fourth-pic:hover {
+    height: 80px;
+    width: 80px;
+    box-shadow: 5px gray;
+  }
+}

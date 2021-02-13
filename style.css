@@ -54,6 +54,7 @@ header .second-nav ul .menu {
   width: 30px;
   opacity: 80%;
   margin-left: 50px auto;
+<<<<<<< HEAD
   z-index: 10;
 }
 header .second-nav ul .menu .dropdown {
@@ -81,6 +82,8 @@ header .second-nav ul .menu .dropdown:hover .dropdown-content {
 }
 header .second-nav ul .menu:hover .dropdown-content {
   display: block;
+=======
+>>>>>>> d2ccc0ccf17147db16eaea5c56a66ace014df08d
 }
 
 main {
@@ -154,6 +157,7 @@ main .container .first-pic {
   opacity: 1;
   color: white;
   text-shadow: 2px 2px 4px #082b2e;
+<<<<<<< HEAD
   position: relative;
   display: inline-block;
 }
@@ -179,11 +183,17 @@ main .container .first-pic:hover .dropdown-content {
 main .container .first-pic:hover .dropdown-content img {
   height: 200px;
   width: 200px;
+=======
+}
+main .container .first-pic:hover {
+  transform: scale(1.5);
+>>>>>>> d2ccc0ccf17147db16eaea5c56a66ace014df08d
 }
 main .container .second-pic {
   grid-area: second;
   color: white;
   text-shadow: 2px 2px 4px #082b2e;
+<<<<<<< HEAD
   position: relative;
   display: inline-block;
 }
@@ -209,6 +219,11 @@ main .container .second-pic:hover .dropdown-content-s {
 main .container .second-pic:hover .dropdown-content-s img {
   height: 200px;
   width: 200px;
+=======
+}
+main .container .second-pic:hover {
+  transform: scale(1.5);
+>>>>>>> d2ccc0ccf17147db16eaea5c56a66ace014df08d
 }
 main .container .third-pic {
   grid-area: third;
@@ -216,7 +231,11 @@ main .container .third-pic {
   text-shadow: 2px 2px 4px #082b2e;
 }
 main .container .third-pic:hover {
+<<<<<<< HEAD
   transform: scale(2);
+=======
+  transform: scale(1.5);
+>>>>>>> d2ccc0ccf17147db16eaea5c56a66ace014df08d
 }
 main .container .fourth-pic {
   grid-area: fourth;
@@ -224,7 +243,11 @@ main .container .fourth-pic {
   text-shadow: 2px 2px 4px #082b2e;
 }
 main .container .fourth-pic:hover {
+<<<<<<< HEAD
   transform: scale(2);
+=======
+  transform: scale(1.2);
+>>>>>>> d2ccc0ccf17147db16eaea5c56a66ace014df08d
 }
 
 @media screen and (max-width: 700px) {
@@ -314,6 +337,7 @@ main .container .fourth-pic:hover {
     grid-area: first;
     opacity: 1;
   }
+<<<<<<< HEAD
   main .container .first-pic .dropdown-content {
     min-width: 100px;
   }
@@ -331,13 +355,21 @@ main .container .fourth-pic:hover {
     height: 50px;
     width: 50px;
   }
+=======
+  main .container .second-pic {
+    grid-area: second;
+  }
+>>>>>>> d2ccc0ccf17147db16eaea5c56a66ace014df08d
   main .container .third-pic {
     grid-area: third;
   }
   main .container .fourth-pic {
     grid-area: fourth;
   }
+<<<<<<< HEAD
   main .container .fourth-pic:hover {
     transform: scale(1.5);
   }
+=======
+>>>>>>> d2ccc0ccf17147db16eaea5c56a66ace014df08d
 }

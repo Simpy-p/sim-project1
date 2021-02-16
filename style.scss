@@ -5,8 +5,9 @@
 }
 
 img {
-  height: 50px;
-  width: 50px;
+  height: 60px;
+  width: 60px;
+  border-radius: 50%;
 }
 
 nav {
@@ -15,13 +16,13 @@ nav {
 
 
 header{
-  background-color: rgb(63, 201, 223);
+  background-color: rgb(68, 193, 231);
   display:flex;
   flex-direction: column;
   align-items: flex-start;
   justify-content: center;
   width: 100%;
-  height: 150px;
+  height: 130px;
   color: rgb(11, 81, 102);
 
   .first-nav{
@@ -30,6 +31,7 @@ header{
     justify-content: space-around;
     height: 50px;
     width: 100%;
+    
   }
    .second-nav{
     display: flex;
@@ -400,8 +402,8 @@ main{
       .first-pic:hover .dropdown-content {
       
         img {
-          height:50px;
-          width: 50px;
+          height:120px;
+          width: 120px;
          
         }
       }
@@ -415,8 +417,8 @@ main{
       .second-pic:hover .dropdown-content-s {
       
         img {
-          height:50px;
-          width: 50px;
+          height:120px;
+          width: 120px;
          
         }
       }

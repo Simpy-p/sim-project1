@@ -355,6 +355,13 @@ main .container .fourth-pic:hover {
   main .container .third-pic {
     grid-area: third;
   }
+  main .container .third-pic .dropdown-content-p {
+    min-width: 100px;
+  }
+  main .container .third-pic:hover .dropdown-content-p img {
+    height: 110px;
+    width: 110px;
+  }
   main .container .fourth-pic {
     grid-area: fourth;
   }

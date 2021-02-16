@@ -425,6 +425,17 @@ main{
      
       .third-pic {
         grid-area: third;
+        .dropdown-content-p {
+          min-width: 100px;
+        }
+      }
+      .third-pic:hover .dropdown-content-p {
+      
+        img {
+          height:110px;
+          width: 110px;
+         
+        }
       }
      
       .fourth-pic {

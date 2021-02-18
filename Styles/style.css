@@ -1,3 +1,5 @@
+@import 'https://fonts.googleapis.com/css2?family=Lobster&display=swap';
+@import 'https://fonts.googleapis.com/css2?family=Dancing+Script&display=swap';
 * {
   margin: 0;
   padding: 0%;
@@ -15,7 +17,7 @@ nav {
 }
 
 header {
-  background-color: #44c1e7;
+  background-color: #a1bace;
   display: flex;
   flex-direction: column;
   align-items: flex-start;
@@ -30,6 +32,18 @@ header .first-nav {
   justify-content: space-around;
   height: 50px;
   width: 100%;
+  font-family: "Dancing Script", cursive;
+}
+header .first-nav h2 {
+  color: purple;
+  font-size: 40px;
+  font-weight: bolder;
+  text-shadow: 2px 2px white;
+}
+header .first-nav h4 {
+  font-size: 25px;
+  color: purple;
+  text-shadow: 2px 2px white;
 }
 header .second-nav {
   display: flex;
@@ -37,6 +51,7 @@ header .second-nav {
   justify-content: space-around;
   height: 50px;
   width: 100%;
+  font-style: "Lobster", cursive;
 }
 header .second-nav ul {
   list-style: none;
@@ -44,6 +59,8 @@ header .second-nav ul {
   display: flex;
   align-items: center;
   justify-content: space-around;
+  font-family: "Lobster", cursive;
+  font-size: 20px;
 }
 header .second-nav ul li {
   display: inline;
@@ -64,7 +81,7 @@ header .second-nav ul .menu .dropdown {
 header .second-nav ul .menu .dropdown-content {
   display: none;
   position: absolute;
-  background-color: #094b53;
+  background-color: #a1bace;
   min-width: 160px;
   box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
   z-index: 1;
@@ -88,20 +105,21 @@ main {
   margin-top: 100px auto;
   height: 800px;
   width: 100%;
-  background-image: url("./the-eye-of-god-blue-eclipse-on-white-background-WAMG7B.jpg");
+  background-image: url("../Assets/the-eye-of-god-blue-eclipse-on-white-background-WAMG7B.jpg");
   background-size: cover;
   opacity: 80%;
-  color: #0b5166;
+  color: purple;
 }
 main h3 {
   width: 100%;
   padding: 50px;
-  font-family: Sansita;
-  font-style: normal;
+  font-family: "Dancing Script", cursive;
   font-weight: bold;
   color: #2A535C;
   font-size: 32px;
   align-content: center;
+  font-size: 40px;
+  text-shadow: 2px 2px purple;
 }
 main .form {
   display: grid;
@@ -112,31 +130,48 @@ main .form {
   padding: 30px;
 }
 main p {
-  width: 650px;
+  width: 800px;
   height: 100px;
   right: 213px;
   top: 271px;
   margin: auto;
   padding: 50px;
-  font-family: Sansita;
+  font-family: "Dancing Script", cursive;
   font-style: normal;
-  font-weight: bold;
-  font-size: 24px;
+  font-size: 40px;
   line-height: 29px;
   word-wrap: break-word;
-  color: #2A535C;
+  color: purple;
 }
 main .activities {
   height: 300px;
   width: 600px;
-  background-image: url("./Copy-of-Untitled-3.png");
+  background-image: url("../Assets/Copy-of-Untitled-3.png");
   background-size: cover;
-  border-radius: 30px;
+  border-radius: 30%;
   margin: 20px auto;
   padding: 80px auto;
 }
 main .activities:hover {
   transform: scale(1.5);
+}
+main .fa {
+  padding: 20px;
+  font-size: 30px;
+  width: 50px;
+  text-align: center;
+  text-decoration: none;
+}
+main .fa:hover {
+  opacity: 0.7;
+}
+main .fa-facebook {
+  background: #3B5998;
+  color: white;
+}
+main .fa-twitter {
+  background: #55ACEE;
+  color: white;
 }
 main .container {
   height: 600px;
@@ -144,7 +179,8 @@ main .container {
   box-sizing: border-box;
   display: grid;
   color: #2A535C;
-  font-family: Sansita;
+  font-family: "Lobster", cursive;
+  text-shadow: 2px 2px 4px purple;
   font-style: normal;
   font-weight: bold;
   margin: auto;
@@ -153,8 +189,6 @@ main .container {
 main .container .first-pic {
   grid-area: first;
   opacity: 1;
-  color: white;
-  text-shadow: 2px 2px 4px #082b2e;
   position: relative;
   display: inline-block;
 }
@@ -163,7 +197,7 @@ main .container .first-pic .dropdown-content {
   position: absolute;
   background-color: #f9f9f9;
   min-width: 160px;
-  box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+  box-shadow: 0px 8px 16px 0px purple;
   z-index: 1;
 }
 main .container .first-pic .dropdown:hover .dropdown-content {
@@ -183,8 +217,6 @@ main .container .first-pic:hover .dropdown-content img {
 }
 main .container .second-pic {
   grid-area: second;
-  color: white;
-  text-shadow: 2px 2px 4px #082b2e;
   position: relative;
   display: inline-block;
 }
@@ -193,7 +225,7 @@ main .container .second-pic .dropdown-content-s {
   position: absolute;
   background-color: #f9f9f9;
   min-width: 160px;
-  box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+  box-shadow: 0px 8px 16px 0px purple;
   z-index: 1;
 }
 main .container .second-pic .dropdown:hover .dropdown-content-s {
@@ -213,15 +245,13 @@ main .container .second-pic:hover .dropdown-content-s img {
 }
 main .container .third-pic {
   grid-area: third;
-  color: white;
-  text-shadow: 2px 2px 4px #082b2e;
 }
 main .container .third-pic .dropdown-content-p {
   display: none;
   position: absolute;
   background-color: #f9f9f9;
   min-width: 140px;
-  box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+  box-shadow: 0px 8px 16px 0px purple;
   z-index: 1;
 }
 main .container .third-pic .dropdown:hover .dropdown-content-p {
@@ -241,8 +271,6 @@ main .container .third-pic:hover .dropdown-content-p img {
 }
 main .container .fourth-pic {
   grid-area: fourth;
-  color: white;
-  text-shadow: 2px 2px 4px #082b2e;
 }
 main .container .fourth-pic:hover {
   transform: scale(2);
@@ -253,15 +281,18 @@ main .container .fourth-pic:hover {
     width: 370px;
     height: 200px;
     background-color: white;
-    font-size: 12px;
+    font-size: 10px;
     text-align: left;
-  }
-  header h2 {
-    text-align: center;
   }
   header .first-nav {
     justify-content: flex-start;
     align-items: center;
+  }
+  header .first-nav h2 {
+    font-size: 25px;
+  }
+  header .first-nav h4 {
+    font-size: 15px;
   }
   header .second-nav {
     flex-direction: column;
@@ -286,17 +317,17 @@ main .container .fourth-pic:hover {
     padding: 10px;
     height: 25px;
     width: 100px;
-    box-shadow: 10px 10px 5px #032e2e;
+    box-shadow: 5px 5px 5px #032e2e;
+    font-size: 15px;
   }
 
+  main {
+    height: 550px;
+  }
   main h3 {
     width: 100%;
     padding: 50px;
-    font-family: Sansita;
-    font-style: normal;
-    font-weight: bold;
-    color: #2A535C;
-    font-size: 20px;
+    font-size: 30px;
     align-content: center;
   }
   main p {
@@ -304,16 +335,13 @@ main .container .fourth-pic:hover {
     height: 90px;
     right: 100px;
     top: 100px;
-    font-size: 15px;
+    font-size: 25px;
     margin: auto;
     padding: 5px;
   }
   main .activities {
     height: 100px;
     width: 200px;
-    background-image: url("./Copy-of-Untitled-3.png");
-    box-shadow: 10px 10px 5px grey;
-    background-size: cover;
     border-radius: 30px;
     margin: 20px auto;
     padding: 80px auto;
@@ -323,10 +351,6 @@ main .container .fourth-pic:hover {
     width: 350px;
     box-sizing: border-box;
     display: grid;
-    color: #2A535C;
-    font-family: Sansita;
-    font-style: normal;
-    font-weight: bold;
     margin: auto;
     padding: 10px;
     grid-template-areas: ". . . first" ". . second ." ". third . ." "fourth . . .";
